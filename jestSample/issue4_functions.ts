@@ -27,7 +27,7 @@ interface EarthquakeData {
  * // 不正な形式の場合
  * parseCoordinates("invalid"); // null
  */
-function parseCoordinates(coordString: string): [number, number, number] | null {
+export function parseCoordinates(coordString: string): [number, number, number] | null {
   const match = coordString.match(/([+-]\d{2}\.\d+)([+-]\d{3}\.\d+)(.*)\//);
 
   if (!match) {
